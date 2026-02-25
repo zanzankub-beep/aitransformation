@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #000;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}
+
+/* พื้นหลัง parallax */
+#layer1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    z-index: -3;
+    transition: transform 0.1s linear;
+}
+
+/* กล่องแก้ว */
+.glass {
+    background: rgba(0, 0, 0, 0.352);
+    border: 1px solid rgba(255, 0, 195, 0.449);
+    backdrop-filter: blur(14px);
+    border-radius: 20px;
+}
+
+.correct {
+    background: rgba(0, 255, 0, 0.15);
+    border-color: #00f260 !important;
+}
+
+.wrong {
+    background: rgba(255, 0, 0, 0.15);
+    border-color: #ff3b3b !important;
+}
